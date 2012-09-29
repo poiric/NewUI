@@ -11,7 +11,7 @@
     alert("This goes before any ExtJS code");
   </ext4:js> 
 
-  <ext4:js at="top">
+  <ext4:js at="bottom">
     alert("This goes after any ExtJS code");
   </ext4:js> 
 
