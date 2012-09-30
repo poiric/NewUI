@@ -1,4 +1,1 @@
-function(panel,eopts)
-  {
-  alert(panel.id + ' rendered!');
-  }
+ alert('Message from Static Javascript!')
