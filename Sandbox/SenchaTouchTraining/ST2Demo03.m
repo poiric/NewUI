@@ -7,6 +7,6 @@ initAccess(sessid) ;
  quit ""
 
 denyAccess(sessid) ;
- do disableGetPage^zewdAPI("hwFragment06",sessid)
+ do disableGetPage^%zewdAPI("hwFragment06",sessid)
  quit ""
 
