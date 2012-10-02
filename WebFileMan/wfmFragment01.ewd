@@ -1,5 +1,4 @@
 <ext4:fragment>
-  <ext4:panel title="Enter or Edit File Entries" id="Panel01" width="400" height="100">
-  </ext4:panel>
+  <ext4:treepanel width="150" height="250" sessionName="myButtonMenu" border="0" addTo="centerPanel" replacePreviousPage="true" nextpage="test4cPanel" />
 </ext4:fragment>
 
