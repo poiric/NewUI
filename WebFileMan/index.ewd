@@ -1,7 +1,7 @@
 <ext4:container rootPath="/ext-4">
   <ext4:viewPort layout="border">
     <ext4:panel region="north" id="northPanel" authoheight="true" border="false" margins="0 0 5 0" html="<h1 class='x-panel-header'>Layout Demo</h1>" />
-    <ext4:panel region="west" collapsible="true" title="Navigation" width="150" height"250" addPage="layout3Tree" />
+    <ext4:panel region="west" collapsible="true" title="Navigation" width="150" height="250" addPage="layout3Tree" />
     <ext4:panel region="south" collapsible="true" title="South Panel" split="true" height="100" minHeight="100" html="This is the South Panel" />
     <ext4:panel region="center" activeTab="0">
       <ext4:panel title="Default Tab" id="centerPanel" />
