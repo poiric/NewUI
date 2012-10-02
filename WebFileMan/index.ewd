@@ -1,0 +1,4 @@
+<ext4:container rootPath="/ext4">
+  <ext4:panel title="Welcome to WebFileMan" id="TopPanel" object="topPanel" var="true" addPage="wfmFragment01">
+</ext4:container>
+
