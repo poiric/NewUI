@@ -1,0 +1,4 @@
+<ext4:fragment onBeforeRender="getButtonMenu^WebFileMan">
+  <ext4:treePanel width="150" height="250" sessionName="myButtonMenu" border="0" addTo="centerPanel" replacePreviousPage="true" nextpage="test4cPanel" />
+</ext4:fragment>
+
