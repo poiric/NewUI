@@ -1,9 +1,5 @@
 <st2:fragment onBeforeRender="getSelectedListItem^st2WebFileManBackend">
-  <st2:panel id="responsePanel" title="Results" html="<?= #response ?>">
-    <st2:listeners>
-      <st2:listener initialize="function() {Ext.getCmp('topWebFileManContainer').push(Ext.getCmp('responsePanel'));}" />
-    </st2:listeners>
-  </st2:panel>
+  <st2:panel id="responsePanel" title="Results" html="<?= #response ?>"/>
 </st2:fragment>
 
 
