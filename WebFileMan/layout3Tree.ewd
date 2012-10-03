@@ -1,0 +1,4 @@
+<ext4:fragment>
+  <ext4:treePanel width="450" height="650" sessionName="myTreeMenu" border="0" addTo="centerPanel" replacePreviousPage="true" nextpage="test4cPanel" />
+</ext4:fragment>
+
