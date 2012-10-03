@@ -13,5 +13,18 @@
   <st2:container id="topWebFileManMenu" scrollable="vertical">
      <st2:toolbar title="Select OPTION:" docked="top" id="topToolbar"/>
   </st2:container>
+
+  <st2:list itemTpl="{title}">
+    <st2:data>
+       <st2:item title="Item 1" />
+       <st2:item title="Item 2" />
+       <st2:item title="Item 3" />
+       <st2:item title="Item 4" />
+    </st2:data>
+    <st2:listeners>
+       <st2:listener itemtap="function(list, index, item, record, e) {alert(record.getData().title);}" />
+    </st2:listeners>
+  </st2:list>
+
 </st2:container>
 
