@@ -12,13 +12,13 @@
 
   <st2:container id="topWebFileManMenu" scrollable="vertical">
      <st2:toolbar title="Select OPTION:" docked="top" id="topToolbar"/>
+
+    <st2:list itemTpl="{text}" sessionName="myList">
+      <st2:listeners>
+        <st2:listener itemtap="function(list, index, item, record, e) {Ext.Msg.alert('You Selected:',record.getData().title);}" />
+      </st2:listeners>
+    </st2:list>
+
   </st2:container>
-
-  <st2:list itemTpl="{text}" sessionName="myList">
-    <st2:listeners>
-       <st2:listener itemtap="function(list, index, item, record, e) {Ext.Msg.alert('You Selected:',record.getData().title);}" />
-    </st2:listeners>
-  </st2:list>
-
 </st2:container>
 
