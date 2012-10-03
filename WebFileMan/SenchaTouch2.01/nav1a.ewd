@@ -1,0 +1,3 @@
+<st2:fragment onBeforeRender="getListData^st2WebFileManBackend">
+  <st2:list title="List Test2" itemTpl="{text}" sessionName="menuList" nextPage="nav1b" />
+</st2:fragment>

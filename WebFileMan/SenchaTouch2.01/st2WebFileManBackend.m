@@ -1,4 +1,4 @@
-getListData(sessid) ; 10/3/12 2:48pm
+getListData(sessid) ; 10/3/12 6:18pm
  n menu,i
  ;
  s menu(1,"text")="1 ENTER OR EDIT FILE ENTRIES"
@@ -21,5 +21,21 @@ getListData(sessid) ; 10/3/12 2:48pm
  s menu(9,"nvp")="Item=9"
 
  do mergeArrayToSession^%zewdAPI(.menu,"menuList",sessid)
+ QUIT ""
+ ;
+ ;
+getSelectedListItem(sessid)
+ n data,recordNo,response
+ s recordNo=$$getRequestValue^%zewdAPI("recordNo",sessid)
+ d setSessionValue^%zewdAPI("recordNo",recordNo,sessid)
+ d mergeArrayFromSession^%zewdAPI(.data,"myList",sessid)
+ s response=$g(data(recordNo,"response"))
+ d setSessionValue^%zewdAPI("response",response,sessid)
+ h 1
+ QUIT ""
+ ;
+ ;
+hang(sessid)
+ h 1
  QUIT ""
  ;
