@@ -11,13 +11,14 @@
   </st2:homeScreen>
 
   <st2:container id="topWebFileManMenu" scrollable="vertical">
-     <st2:toolbar title="Select OPTION:" docked="top" id="topToolbar"/>
+     <st2:toolbar title="Welcome to WebFileMan !" docked="top" id="topToolbar"/>
+     <st2:toolbar title="Select OPTION:" id="optionToolbar"/>
 
-    <st2:list itemTpl="{text}" sessionName="myList">
-      <st2:listeners>
-        <st2:listener itemtap="function(list, index, item, record, e) {Ext.Msg.alert('You Selected:',record.getData().title);}" />
-      </st2:listeners>
-    </st2:list>
+  <st2:list itemTpl="{text}" sessionName="menuList">
+    <st2:listeners>
+       <st2:listener itemtap="function(list, index, item, record, e) {Ext.Msg.alert('You Selected:',record.getData().text,Ext.emptyFn);}" />
+    </st2:listeners>
+  </st2:list>
 
   </st2:container>
 </st2:container>
