@@ -31,7 +31,6 @@ getSelectedListItem(sessid)
  d mergeArrayFromSession^%zewdAPI(.data,"myList",sessid)
  s response=$g(data(recordNo,"response"))
  d setSessionValue^%zewdAPI("response",response,sessid)
- h 1
  QUIT ""
  ;
  ;
