@@ -1,0 +1,47 @@
+
+This applications implements the Prisoner's Dilemma game:
+
+     http://en.wikipedia.org/wiki/Prisoner's_dilemma
+
+It stores its scores and sessions in a global
+
+            ^zrpiGames("PrisonersDilemma",
+
+The number of games played is stored in
+
+     ^zrpiGames("PrisonersDilemma","numberOfGamesPlayed"
+
+The game sessions are stored in
+
+     ^zrpiGames("PrisonersDilemma","sessions"
+
+A particular session will be stored as a number
+for example, session 55 will be
+
+     ^zrpiGames("PrisonersDilemma","sessions",55
+
+The players will be stored as
+
+  ^zrpiGames("PrisonersDilemma","sessions",55,"player1")="name of player1"
+  ^zrpiGames("PrisonersDilemma","sessions",55,"player2")="name of player2"
+
+The moves will be stored as
+
+
+  ^zrpiGames("PrisonersDilemma","sessions",55,"moves")
+
+The moves will be stored as numbered
+
+  ^zrpiGames("PrisonersDilemma","sessions",55,"moves",23)
+  
+and the actual moves per player stored as
+
+  ^zrpiGames("PrisonersDilemma","sessions",55,"moves",23,"player1")="D"
+  ^zrpiGames("PrisonersDilemma","sessions",55,"moves",23,"player2")="C"
+
+Where
+
+  "D" represents Defection
+  "C" represents Cooperation
+
+
