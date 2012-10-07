@@ -1,0 +1,5 @@
+<ext4:container rootPath="/vista/ext-4">
+  <ext4:panel title="Hello World Panel" html="Hello World" />
+
+  <ext4:image sessionName="myImage" width="500" height="300" src="http://www.itk.org/Doxygen/html/itkLogo.jpg" />
+</ext4:container>
