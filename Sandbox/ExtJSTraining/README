@@ -1,0 +1,32 @@
+
+If in the dEWDrop VM 
+
+Create a directory
+
+     /home/vista/www/ewd/extjsdemo
+
+put these .ewd files in the directory
+
+     /home/vista/www/ewd/extjsdemo
+
+copy the .m files in the directory
+
+     /home/vista/www/r
+
+cd into the directory
+
+     /home/vista/www/ewd/extjsdemo
+
+launch gtm with the command
+
+      mumps -dir
+
+once you get the GT.M prompt type
+
+    do compileAll^%zewdAPI("extjsdemo")
+
+from your host machine open the URL
+
+    https://IPNUMBER/vista/extjsdemo/helloworld01.ewd
+
+

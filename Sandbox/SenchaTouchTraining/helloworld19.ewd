@@ -1,4 +1,4 @@
-<st2:container rootPath="/st2" title="Hello World 19">
+<st2:container rootPath="/vista/st-2" title="Hello World 19">
 
   <script src="/js/st2Demo02.js" />
 
