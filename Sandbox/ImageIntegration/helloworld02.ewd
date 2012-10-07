@@ -1,0 +1,6 @@
+<ext4:container rootPath="/vista/ext-4" onBeforeRender="getImageURL^extjsImageIntegration01">
+
+  <ext4:panel title="Hello World Image" html="Hello World Image" />
+
+  <ext4:image sessionName="myImage" width="500" height="300" src="#myImageURL" />
+</ext4:container>
