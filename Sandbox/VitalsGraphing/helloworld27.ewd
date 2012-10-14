@@ -1,0 +1,13 @@
+<ext4:container rootPath="/vista/ext-4" onBeforeRender="getChartData^VitalsDemo01">
+
+  <ext4:panel title="Scatter Chart" layout="fit" height="400" width="500">
+
+    <ext4:chart sessionName="myChart" theme="Category2" flex="1" animate="true">
+      <ext4:axis type="Numeric" position="left" title="Scores" fields="line1" grid="true" minimum="0" />
+      <ext4:axis type="Category" position="bottom" fields="month" grid="true" title="Month" />
+      <ext4:series type="scatter" axis="left" xField="month" yField="line1" />
+    </ext4:chart>
+
+  </ext4:panel>
+
+</ext4:container>
