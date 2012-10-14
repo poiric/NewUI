@@ -4,16 +4,16 @@
 
     <ext4:chart sessionName="myChart" animate="true" flex="1">
 
-      <ext4:axis type="Numeric" position="bottom" title="Score" grid="true" minimum="0" >
+      <ext4:axis type="Numeric" position="left" title="Score" grid="true" minimum="0" >
         <ext4:fields>
           <ext4:field name="line1" />
           <ext4:field name="line2" />
         </ext4:fields>
       </ext4:axis>
 
-      <ext4:axis type="Category" position="left" fields="month" grid="true" title="Month" />
+      <ext4:axis type="Category" position="bottom" fields="month" grid="true" title="Month" />
 
-      <ext4:series type="bar" axis="bottom" xField="month">
+      <ext4:series type="column" axis="left" xField="month">
         <ext4:yfields>
           <ext4:yfield name="line1" />
           <ext4:yfield name="line2" />
