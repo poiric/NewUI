@@ -1,0 +1,21 @@
+<ext4:container rootPath="/vista/ext-4" onBeforeRender="setGauge^VitalsDemo04">
+
+  <script type="text/javascript">
+    setTimeout(function() {
+    EWD.ext4.setGauge("myGauge",4);
+    },3000);
+    setTimeout(function() {
+    EWD.ext4.setGauge("myGauge",44);
+    },6000);
+  </script>
+
+  <ext4:panel title="Simple Gauge" layout="fit" height="400" width="500">
+
+    <ext4:chart type="gauge" id="myGauge" animate="true" value="#gauge" flex="1" insetPadding="35">
+      <ext4:axis minimum="0" maximum="50" steps="10" margin="10" />
+      <ext4:series donut="75" color1="#82B525" color2="#cae" />
+    </ext4:chart>
+
+  </ext4:panel>
+
+</ext4:container>
