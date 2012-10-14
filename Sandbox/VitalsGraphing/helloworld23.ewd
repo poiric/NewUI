@@ -1,0 +1,28 @@
+<ext4:container rootPath="/vista/ext-4" onBeforeRender="getChartData^VitalsDemo02">
+
+  <script type="text/javascript">
+    EWD.ext4.showPieTip = function(storeItem, item) {
+      var total = 0;
+      Ext.getCmp('myPie').store.each(function(rec) {
+        total += rec.get('line1');
+        });
+        this.setTitle(storeItem.get('month') + ': ' + Math.round(storeItem.get('line1') / total * 100) + '%');
+        };
+  </script>
+
+  <ext4:panel title="Pie Chart" layout="fit" width="400" height="500">
+
+    <ext4:chart sessionName="myChart" id="myPie" flex="1" animate="true" insetPadding="50">
+
+      <ext4:series type="pie" donut="50" field="line1" showInLegend="true">
+        <ext4:tips trackMouse="true" width="140" height="28" renderer=".EWD.ext4.showPieTip" />
+        <ext4:highlight>
+          <ext4:segment margin="20" />
+        </ext4:highlight>
+      </ext4:series>
+
+    </ext4:chart>
+
+  </ext4:panel>
+
+</ext4:container>
