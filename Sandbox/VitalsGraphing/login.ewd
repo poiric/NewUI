@@ -1,13 +1,15 @@
 <ext4:container rootPath="/vista/ext-4" onBeforeRender="INIT^C0EEWD">
 
-  <ext4:formPanel id="loginPanel" title="VistA Login Page">
+  <ext4:formPanel id="loginPanel" title="VistA Login Page" width="800" height="300" bodyPadding="10">
 
-    <ext4:fieldset title="Login Form" collapsible="false">
-      <ext4:textfield id="accessField" fieldLabel="Access Code" value="*" />
-      <ext4:textfield id="verifyField" fieldLabel="Verify Code" value="*" />
-    </ext4:fieldset>
+    <ext4:textfield id="accessCode" fieldLabel="Access Code" />
+    <ext4:textfield id="verifyCode" fieldLabel="Verify Code" />
+
+    <ext4:submitbutton text="Submit" nextPage="validateForm" addTo="secondPanel" replacePreviousPage="true" />
    
   </ext4:formPanel>
+
+  <ext4:panel id="secondPanel" width="200" height="200" />
 
 </ext4:container>
 
