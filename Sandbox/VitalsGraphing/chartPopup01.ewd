@@ -1,0 +1,4 @@
+<ext4:fragment onBeforeRender="getChartPoint^VitalsDemo03">
+  <ext4:window title="Drill down" autoShow="true" height="200" width="400"
+     html="Score for <?= #month ?> = <?= #score ?>" />
+</ext4:fragment>
