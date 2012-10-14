@@ -11,7 +11,7 @@
     <ext4:series type="line" axis="left" xField="month" yField="line2" />
 
     <ext4:background>
-      <ext4:gradient angle="45">
+      <ext4:gradient id="backgroundGradient" angle="45">
         <ext4:stops>
           <ext4:stop value="0"   color="##ffffff" />
           <ext4:stop value="100" color="##eaf1f8" />
