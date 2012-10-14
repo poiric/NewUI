@@ -20,7 +20,7 @@
     <ext4:axis type="Category" position="bottom" fields="month" grid="true" title="Month" />
     <ext4:series type="line" axis="left" xField="month" yField="line1" fill="true" />
     <ext4:series type="line" axis="left" xField="month" yField="line2" >
-      <ext4:tips trackMouse="true" width="80" height="30" render=".EWD.ext4.showTip" />
+      <ext4:tips trackMouse="true" width="80" height="30" renderer=".EWD.ext4.showTip" />
       <ext4:listeners>
         <ext4:listener itemmousedown="function(item) {EWD.ext4.popupWindow(item)}" />
       </ext4:listeners>
