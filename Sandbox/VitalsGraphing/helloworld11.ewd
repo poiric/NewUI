@@ -1,4 +1,4 @@
-<ext4:container rootPath="/vista/ext-4" onBeforeRender="getChartData^VitalsDemo01">
+<ext4:container rootPath="/vista/ext-4" onBeforeRender="getChartData^VitalsDemo02">
   <ext4:panel title="Bar Chart" layout="fit" height="400" width="500">
     <ext4:chart sessionName="myChart" animate="true" flex="1">
       <ext4:axis type="Numeric" position="bottom" title="Score" grid="true" minimum="0">
