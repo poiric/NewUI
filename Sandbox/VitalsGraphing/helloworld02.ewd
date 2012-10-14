@@ -10,7 +10,8 @@
       </ext4:fields>
     </ext4:axis>
     <ext4:axis type="Category" position="bottom" fields="month" grid="true" title="Month" />
-    <ext4:series type="line" axis="left" xField="month" yField="line1" />
+    <ext4:series type="line" axis="left" xField="month" yField="line1" fill="true" />
+    <ext4:series type="line" axis="left" xField="month" yField="line2" />
   </ext4:chart>
 
 </ext4:container>
