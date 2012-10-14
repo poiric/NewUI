@@ -1,3 +1,3 @@
 <ext4:fragment onBeforeRender="getChartDef^VitalsDemo05"> 
-  <ext4:chart sessionName="myChart" charDefinition="myChartDef" style="background:#fff" />
+  <ext4:chart sessionName="myChart" chartDefinition="myChartDef" style="background:#fff" />
 </ext4:fragment>
