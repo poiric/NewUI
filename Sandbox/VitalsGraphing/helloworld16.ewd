@@ -1,0 +1,33 @@
+<ext4:container rootPath="/vista/ext-4" onBeforeRender="getChartData^VitalsDemo02">
+
+  <ext4:panel title="Bar Chart" layout="fit" height="400" width="500">
+
+    <ext4:chart sessionName="myChart" animate="true" flex="1">
+
+      <ext4:axis type="Numeric" position="left" title="Score" grid="true" minimum="0" >
+        <ext4:fields>
+          <ext4:field name="line1" />
+          <ext4:field name="line2" />
+        </ext4:fields>
+      </ext4:axis>
+
+      <ext4:axis type="Category" position="bottom" fields="month" grid="true" title="Month">
+        <ext4:label>
+          <ext4:rotate degrees="315" />
+        </ext4:label>
+      </ext4:axis>
+
+      <ext4:series type="column" axis="left" xField="month" stacked="true">
+        <ext4:yfields>
+          <ext4:yfield name="line1" />
+          <ext4:yfield name="line2" />
+        </ext4:yfields>
+      </ext4:series>
+
+      <ext4:legend position="bottom" />
+
+    </ext4:chart>
+
+  </ext4:panel>
+
+</ext4:container>
