@@ -1,4 +1,4 @@
-getChartData(sessid) ; 10/14/12 8:33am
+getChartData(sessid) ; 10/14/12 10:24am
  new chart
  ;
  set chart("line1",1)=10
@@ -18,8 +18,8 @@ getChartData(sessid) ; 10/14/12 8:33am
  set chart("month",5)="May"
  do mergeArrayToSession^%zewdAPI(.chart,"myChart",sessid)
  quit ""
-
-getChartPoint(sessid)
+ ;
+getChartPoint(sessid) ;
  do copyRequestValueToSession^%zewdAPI("month",sessid)
  do copyRequestValueToSession^%zewdAPI("score",sessid)
  quit ""
