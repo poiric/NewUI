@@ -1,0 +1,14 @@
+<ext4:container rootPath="/vista/ext-4" onBeforeRender="getChartData^VitalsDemo01">
+
+  <ext4:panel title="Radar Chart" layout="fit" height="400" width="500">
+
+    <ext4:chart sessionName="myChart" theme="Category4" flex="1" animate="true">
+      <ext4:axis type="Radial" position="radial" />
+      <ext4:series type="radar" xField="month" yField="line1" showMarkers="true">
+        <ext4:style 'stroke-width'="2" fill="none" />
+      </ext4:series>
+    </ext4:chart>
+
+  </ext4:panel>
+
+</ext4:container>
