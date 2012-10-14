@@ -23,7 +23,7 @@
 
     <ext4:axis type="Category" position="bottom" fields="month" grid="true" title="Month" />
 
-    <ext4:series type="area" axis="left" xField="month" highlight="true" />
+    <ext4:series type="area" axis="left" xField="month" highlight="true">
       <ext4:yfields>
         <ext4:yfield name="line1" />
         <ext4:yfield name="line2" />
