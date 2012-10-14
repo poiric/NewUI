@@ -1,0 +1,18 @@
+<ext4:container rootPath="/vista/ext-4" onBeforeRender="getChartData^VitalsDemo02">
+
+  <ext4:panel title="Scatter Chart" layout="fit" height="400" width="500">
+
+    <ext4:chart sessionName="myChart" theme="Category2" flex="1" animate="true">
+      <ext4:axis type="Numeric" position="left" title="Scores" fields="line1" grid="true" minimum="0" maximum="12" />
+      <ext4:axis type="Category" position="bottom" fields="month" grid="true" title="Month" />
+      <ext4:series type="scatter" axis="left" xField="month" yField="line1">
+        <ext4:markerConfig radius="0" />
+        <ext4:listeners>
+          <ext4:listeners afterRender="EWD.ext4.setScatterRadius(this,'line2',2)" />
+        </ext4:listeners>
+      </ext4:series>
+    </ext4:chart>
+
+  </ext4:panel>
+
+</ext4:container>
