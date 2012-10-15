@@ -1,11 +1,12 @@
-createDB() ; 10/14/12 7:27pm
+createDB() ; 10/14/12 7:30pm
  kill ^zmcmData
- new ^zmcmData
+ set ^zmcmData=""
  set ^zmcmData("nextChild")=0
  set ^zmcmData("children")=""
  quit ""
  ;
 addChild(name,dateOfBirth) ;
+ new nextChild
  set nextChild=^zmcmData("nextChild")
  set ^zmcmData("children",nextChild,"name")=""
  set ^zmcmData("children",nextChild,"name","first")=name("first")
