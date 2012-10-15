@@ -1,0 +1,10 @@
+<ext4:fragment onBeforeRender="getWeightData^growthChartsMCM">
+
+  <ext4:chart sessionName="weightChart" animate="true" flex="1">
+    <ext4:axis type="Numeric" position="left"   title="Weight" field="Weight" grid="true" minimum="0" maximum="20" />
+    <ext4:axis type="Time" position="bottom" title="Date"   field="Date"   grid="true"  />
+    <ext4:series type="line" axis="left" xField="Date" yField="Weight" />
+  </ext4:chart>
+
+</ext4:fragment>
+

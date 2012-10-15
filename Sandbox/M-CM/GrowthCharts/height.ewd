@@ -1,0 +1,10 @@
+<ext4:fragment onBeforeRender="getHeightData^growthChartsMCM">
+
+  <ext4:chart sessionName="heightChart" animate="true" flex="1">
+    <ext4:axis type="Numeric" position="left"   title="Height" field="Height" grid="true" minimum="0" maximum="20" />
+    <ext4:axis type="Time" position="bottom" title="Date"   field="Date"   grid="true"  />
+    <ext4:series type="line" axis="left" xField="Date" yField="Height" />
+  </ext4:chart>
+
+</ext4:fragment>
+
