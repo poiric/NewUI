@@ -1,42 +1,9 @@
 <ext4:fragment onBeforeRender="getChartData^growthChartsMCM">
 
-  <ext4:js at="top">
-    EWD.ext4.showTip = function(storeItem, item) {
-      this.setTitle(storeItem.get('month') + ': ' + storeItem.get('Height'));
-    };
-    EWD.ext4.popupWindow = function(item) {
-      var nvp="month" + item.storeItem.get('month') + "&score=" + item.storeItem.get('Height');
-      EWD.ajax.getPage({page:'chartPopup01',nvp:nvp});
-    };
-  </ext4:js>
-
   <ext4:chart sessionName="myChart" animate="true" flex="1">
-    <ext4:axis type="Numeric" position="left" title="Score" grid="true" minimum="0">
-      <ext4:fields>
-        <ext4:field name="Weight" />
-        <ext4:field name="Height" />
-      </ext4:fields>
-    </ext4:axis>
-    <ext4:axis type="Category" position="bottom" fields="month" grid="true" title="Month" />
-    <ext4:series type="line" axis="left" xField="month" yField="Weight" />
-    <ext4:series type="line" axis="left" xField="month" yField="Height" >
-      <ext4:tips trackMouse="true" width="80" height="30" renderer=".EWD.ext4.showTip" />
-      <ext4:listeners>
-        <ext4:listener itemmousedown="function(item) {EWD.ext4.popupWindow(item)}" />
-      </ext4:listeners>
-    </ext4:series>
-
-    <ext4:legend position="bottom" />
-
-    <ext4:background>
-      <ext4:gradient id="backgroundGradient" angle="45">
-        <ext4:stops>
-          <ext4:stop value="0"   color="##ffffff" />
-          <ext4:stop value="100" color="##eaf1f8" />
-        </ext4:stops>
-      </ext4:gradient>
-    </ext4:background>
-
+    <ext4:axis type="Numeric" position="left"   title="Weight" field="Weight" grid="true" minimum="0" maximum="20" />
+    <ext4:axis type="Time" position="bottom" title="Date"   field="Date"   grid="true"  />
+    <ext4:series type="line" axis="left" xField="Date" yField="Weight" />
   </ext4:chart>
 </ext4:fragment>
 
