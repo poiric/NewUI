@@ -1,4 +1,4 @@
-createDB() ; 10/17/12 11:14pm
+createDB() ; 10/17/12 11:25pm
  kill ^zmcmData
  set ^zmcmData=""
  set ^zmcmData("nextChild")=0
@@ -22,23 +22,21 @@ addChild(name,dateOfBirth,gender) ;
  quit thisChild
  ;
 addWeightMeasurement(childId,date,weight) ;
- new horologDate
- set horologDate=$$FUNC^%DATE(date)
- set ^zmcmData("children",childId,"measurements","weigth",horologDate)=weight
- kill horologDate
+ do addMeasurement(childId,date,"weight",weight)
  quit
  ;
 addHeightMeasurement(childId,date,height) ;
- new horologDate
- set horologDate=$$FUNC^%DATE(date)
- set ^zmcmData("children",childId,"measurements","heigth",horologDate)=height
- kill horologDate
+ do addMeasurement(childId,date,"height",height)
  quit
  ;
 addHeadCircMeasurement(childId,date,headCircumference) ;
+ do addMeasurement(childId,date,"headCircumference",headCircumference)
+ quit
+ ;
+addMeasurement(childId,date,metric,measurement) ;
  new horologDate
  set horologDate=$$FUNC^%DATE(date)
- set ^zmcmData("children",childId,"measurements","headCircumference",horologDate)=headCircumference
+ set ^zmcmData("children",childId,"measurements",metric,horologDate)=measurement
  kill horologDate
  quit
  ;
