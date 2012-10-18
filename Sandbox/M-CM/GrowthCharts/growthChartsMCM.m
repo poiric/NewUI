@@ -1,3 +1,26 @@
+getChieldHeader(sessid) ; 10/18/12 4:13am
+ new dateOfBirth
+ new firstName
+ new lastName
+ new childName
+ new childData
+ new dateOfBirthNumeric
+ new dateOfBirthText
+ set dateOfBirthNumeric=^zmcmData("children",0,"dateOfBirth")
+ set dateOfBirthText=$ZDATE(dateOfBirthNumeric)
+ ;
+ set firstName=^zmcmData("children",0,"name","first")
+ set lastName=^zmcmData("children",0,"name","last")
+ set childName=firstName_" "_lastName
+ set childData="Name: "_childName_"       Date of Birth: "_dateOfBirthText
+ do setSessionValue^%zewdAPI("childData",childData,sessid)
+ kill childName
+ kill lastName
+ kill firstName
+ kill dateOfBirth
+ kill childData
+ quit ""
+ ;
 getWeightData(sessid) ; 10/18/12 3:44am
  new chart
  new childId
