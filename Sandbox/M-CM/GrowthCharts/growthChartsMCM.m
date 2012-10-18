@@ -1,16 +1,22 @@
-getWeightData(sessid) ; 10/18/12 2:27am
+getWeightData(sessid) ; 10/18/12 3:10am
  new chart
  new childId
  new weightDate
  set childId=0
- new i
- set i=1
- set weightDate="" for  set weightDate=$ORDER(^zmcmData("children",0,"measurements","weight",weightDate))  quit:weightDate=""  do
+ new dateOfBirth
+ new daysOfLife
+ set dateOfBirth=^zmcmData("children",0,"dateOfBirth")
+ set weightDate=""
+ for  set weightDate=$ORDER(^zmcmData("children",childId,"measurements","weight",weightDate))  quit:weightDate=""  do
  . set weightEntry=^zmcmData("children",0,"measurements","weight",weightDate)
- . set chart("Weight",i)=weightEntry
- . set chart("Date",i)=$ZDATE(weightDate)
- . set i=i+1
+ . set daysOfLife=weightDate-dateOfBirth
+ . set chart("Weight",daysOfLife)=weightEntry
+ . set chart("Date",daysOfLife)=daysOfLife
  do mergeArrayToSession^%zewdAPI(.chart,"weightChart",sessid)
+ kill childId
+ kill weightDate
+ kill dateOfBirth
+ kill daysOfLife
  quit ""
  ;
 getHeadCircData(sessid) ; 10/14/12 6:36pm
