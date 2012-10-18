@@ -1,30 +1,15 @@
-writeWeightData() ; 10/18/12 1:00am
+getWeightData(sessid) ; 10/18/12 2:27am
  new chart
  new childId
  new weightDate
  set childId=0
+ new i
+ set i=1
  set weightDate="" for  set weightDate=$ORDER(^zmcmData("children",0,"measurements","weight",weightDate))  quit:weightDate=""  do
  . set weightEntry=^zmcmData("children",0,"measurements","weight",weightDate)
- . write weightDate," = ",weightEntry,!
- . set chart("Weight",weightDate)=weightEntry
- . set chart("Date",weightDate)=$ZDATE(weightDate)
- zwrite chart
- kill chart
- kill childId
- kill weightDate
- quit
- ;
-getWeightData(sessid) ; 10/18/12 12:46am
- new chart
- new childId
- new weightDate
- set childId=0
- set weightDate="" for  set weightDate=$ORDER(^zmcmData("children",0,"measurements","weight",weightDate))  quit:weightDate=""  do
- . set weightEntry=^zmcmData("children",0,"measurements","weight",weightDate)
- . write weightDate," = ",weightEntry,!
- . set chart("Weight",weightDate)=weightEntry
- . set chart("Date",weightDate)=$ZDATE(weightDate)
- ;
+ . set chart("Weight",i)=weightEntry
+ . set chart("Date",i)=$ZDATE(weightDate)
+ . set i=i+1
  do mergeArrayToSession^%zewdAPI(.chart,"weightChart",sessid)
  quit ""
  ;
