@@ -1,4 +1,4 @@
-getWeightData(sessid) ; 10/18/12 3:26am
+getWeightData(sessid) ; 10/18/12 3:44am
  new chart
  new childId
  new measureDate
@@ -29,9 +29,9 @@ getHeightData(sessid) ; 10/18/12 3:22am
  set dateOfBirth=^zmcmData("children",0,"dateOfBirth")
  set measureDate=""
  for  set measureDate=$ORDER(^zmcmData("children",childId,"measurements","height",measureDate))  quit:measureDate=""  do
- . set heightEntry=^zmcmData("children",0,"measurements","height",measureDate)
+ . set measurement=^zmcmData("children",0,"measurements","height",measureDate)
  . set daysOfLife=measureDate-dateOfBirth
- . set chart("Height",daysOfLife)=heightEntry
+ . set chart("Height",daysOfLife)=measurement
  . set chart("Date",daysOfLife)=daysOfLife
  do mergeArrayToSession^%zewdAPI(.chart,"heightChart",sessid)
  kill childId
