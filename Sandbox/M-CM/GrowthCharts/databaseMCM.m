@@ -1,4 +1,4 @@
-createDB() ; 10/17/12 11:25pm
+createDB() ; 10/17/12 11:55pm
  kill ^zmcmData
  set ^zmcmData=""
  set ^zmcmData("nextChild")=0
@@ -15,7 +15,7 @@ addChild(name,dateOfBirth,gender) ;
  set ^zmcmData("children",thisChild,"dateOfBirth")=$$FUNC^%DATE(dateOfBirth)
  set ^zmcmData("children",thisChild,"gender")=gender
  set ^zmcmData("children",thisChild,"measurements")=""
- set ^zmcmData("children",thisChild,"measurements","weigth")=""
+ set ^zmcmData("children",thisChild,"measurements","weight")=""
  set ^zmcmData("children",thisChild,"measurements","height")=""
  set ^zmcmData("children",thisChild,"measurements","headCircumference")=""
  set ^zmcmData("nextChild")=thisChild+1
