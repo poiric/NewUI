@@ -1,3 +1,23 @@
-<ext4:fragment>
-
-</ext4:fragment>
+<ext4:container rootPath="/ext-4" title="Extjs 4 Test">
+  <link href="/ext-4/examples/menu/menus.css" />
+	<ext4:panel id="mainPanel" title="ExtJS v4 Button Menus" height="300" width="400">
+		<ext4:toolbar>
+			<ext4:button text="Head Circ" iconCls="bmenu">
+				<ext4:buttonmenu id="mainMenu">
+				</ext4:buttonmenu>
+			</ext4:button>
+			<ext4:button text="Weight" iconCls="bmenu">
+				<ext4:buttonmenu id="mainMenu">
+				</ext4:buttonmenu>
+			</ext4:button>
+			<ext4:button text="Height" iconCls="bmenu">
+				<ext4:buttonmenu id="mainMenu">
+				</ext4:buttonmenu>
+			</ext4:button>
+			<ext4:button text="Weight/Height" iconCls="bmenu">
+				<ext4:buttonmenu id="mainMenu">
+				</ext4:buttonmenu>
+			</ext4:button>
+		</ext4:toolbar>
+	</ext4:panel>
+</ext4:container>
