@@ -1,3 +1,7 @@
-<ext4:fragment>
-
-</ext4:fragment>
+<ext4:container rootPath="/ext-4" onBeforeRender="getGridData^Ext4Demo" >
+  <ext4:gridPanel title="Table" frame="true" height="200" width="550" sessionName="Table">
+		<ext4:gridcolumn text="Participant" width="100" sortable="false" hideable="false" dataIndex="participant" />
+		<ext4:gridcolumn text="Sex" width="150" dataIndex="sex" />
+		<ext4:gridcolumn text="Data beyond age 3?" flex="1" dataIndex="age beyond 3" />
+	</ext4:gridPanel>
+</ext4:container>
