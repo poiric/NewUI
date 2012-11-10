@@ -2,10 +2,10 @@
 
   <ext4:menu renderTo="participants_chart.ewd" title="Display Settings" align="right" height="100" width="100" 
       floating="false">
-  	<ext4:menuitem text="All" plain="true"/>
-		<ext4:menuitem text="Male" plain="true"/>
-		<ext4:menuitem text="Female" plain="true"/>
-		<ext4:menuitem text="Data beyond age 3" plain="true"/>
-	</ext4:menu> 
+    <ext4:menuitem text="All" plain="true"/>
+    <ext4:menuitem text="Male" plain="true"/>
+    <ext4:menuitem text="Female" plain="true"/>
+    <ext4:menuitem text="Data beyond age 3" plain="true"/>
+  </ext4:menu> 
 
 </ext4:fragment>
