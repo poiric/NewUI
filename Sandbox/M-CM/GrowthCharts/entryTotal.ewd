@@ -1,3 +1,3 @@
 <ext4:fragment onBeforeRender="getNumberOfParticipants^entryTotal">
-  <ext4:panel frame="true" margin="5 5 5 5" height="30" width="150" html="#totalNumber">
+  <ext4:panel frame="true" margin="5 5 5 5" height="25" width="140" html="#totalNumber">
 </ext4:fragment>
