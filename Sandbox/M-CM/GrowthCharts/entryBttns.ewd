@@ -1,20 +1,8 @@
 <ext4:fragment>
   <ext4:toolbar>
-    <ext4:button text="Head Circ" iconCls="bmenu">
-      <ext4:buttonmenu id="mainMenu">
-      </ext4:buttonmenu>
-    </ext4:button>
-    <ext4:button text="Weight" iconCls="bmenu">
-      <ext4:buttonmenu id="mainMenu">
-      </ext4:buttonmenu>
-    </ext4:button>
-    <ext4:button text="Height" iconCls="bmenu">
-      <ext4:buttonmenu id="mainMenu">
-      </ext4:buttonmenu>
-    </ext4:button>
-    <ext4:button text="Weight/Height" iconCls="bmenu">
-      <ext4:buttonmenu id="mainMenu">
-      </ext4:buttonmenu>
-    </ext4:button>
+    <ext4:button text="Head Circ"      nextPage="headChart"   addTo="entryChartPanel" replacePreviousPage="true" />
+    <ext4:button text="Weight"         nextPage="weightChart" addTo="entryChartPanel" replacePreviousPage="true" />
+    <ext4:button text="Height"         nextPage="headChart" addTo="entryChartPanel" replacePreviousPage="true" />
+    <ext4:button text="Weight/Height"  nextPage="headChart" addTo="entryChartPanel" replacePreviousPage="true" />
   </ext4:toolbar>
 </ext4:fragment>

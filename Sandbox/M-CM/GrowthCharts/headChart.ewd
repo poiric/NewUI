@@ -2,8 +2,8 @@
   <ext4:panel title="Head Circumference for Age" layout="fit" />
     <ext4:panel title="Birth through age 3" layout="fit" />
     <ext4:chart sessionName="headcircChart" animate="true" height="380" width="600" >
-      <ext4:axis type="Numeric" position="left"   title="Head (cm)"    field="HeadCirc" grid="true" minimum="0" maximum="60" />
-      <ext4:axis type="Time"    position="bottom" title="Age (months)" field="Date"     grid="true" />
+      <ext4:axis type="Numeric" position="left"   title="Head (cm)"        field="HeadCirc" grid="true" minimum="0" maximum="60" />
+      <ext4:axis type="Time"    position="bottom" title="Age (months)"     field="Date"     grid="true" />
       <ext4:series type="line" axis="left" xField="Date" yField="HeadCirc" />
     </ext4:chart>
   </ext4:panel>

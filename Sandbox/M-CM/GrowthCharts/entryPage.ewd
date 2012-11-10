@@ -3,7 +3,7 @@
   <ext4:panel title="M-CM Growth Data" height="100" width="600" addPage="entryTitle" />
   <ext4:panel                          height="50"  width="200" addPage="entryTotal" />
   <ext4:panel                          height="40"  width="350" addPage="entryBttns" />
-  <ext4:panel                          height="400" width="600" addPage="headChart"  />
+  <ext4:panel id=entryChartPanel       height="400" width="600" addPage="headChart"  />
   <ext4:panel                          height="200" width="600" addPage="entryTable" />
 </ext4:container>
 

@@ -1,10 +1,11 @@
 <ext4:fragment onBeforeRender="getWeightData^growthChartsMCM">
-
-  <ext4:chart sessionName="weightChart" animate="true" flex="1">
-    <ext4:axis type="Numeric" position="left"   title="Weight" field="Weight" grid="true" minimum="0" maximum="20" />
-    <ext4:axis type="Time"    position="bottom" title="Date"   field="Date"   grid="true" />
-    <ext4:series type="line" axis="left" xField="Date" yField="Weight" />
-  </ext4:chart>
-
+  <ext4:panel title="Weight for Age" layout="fit" />
+    <ext4:panel title="Birth through age 3" layout="fit" />
+    <ext4:chart sessionName="weightChart" animate="true" height="380" width="600" >
+      <ext4:axis type="Numeric" position="left"   title="Weight (Kg)"    field="Weight" grid="true" minimum="0" maximum="20" />
+      <ext4:axis type="Time"    position="bottom" title="Date (months)"  field="Date"   grid="true" />
+      <ext4:series type="line" axis="left" xField="Date" yField="Weight" />
+    </ext4:chart>
+  </ext4:panel>
 </ext4:fragment>
 
