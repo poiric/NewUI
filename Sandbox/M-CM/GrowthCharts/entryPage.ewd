@@ -1,8 +1,8 @@
 <ext4:container rootPath="/vista/ext-4" >
   <ext4:image sessionName="MCMLogo" src="/vista/resources/M-CM_Network_Logo.png" />
-  <ext4:panel title="M-CM Growth Data" height="100" width="600" bodyStyle="padding:5px" addPage="entryTitle" />
-  <ext4:panel                          height="50"  width="200" bodyStyle="padding:5px" addPage="entryTotal" />
-  <ext4:panel                          height="40"  width="350" bodyStyle="padding:5px" addPage="entryBttns" />
-  <ext4:panel                          height="500" width="600" bodyStyle="padding:5px" addPage="entryTable" />
+  <ext4:panel title="M-CM Growth Data" height="100" width="600" addPage="entryTitle" />
+  <ext4:panel                          height="50"  width="200" addPage="entryTotal" />
+  <ext4:panel                          height="40"  width="350" addPage="entryBttns" />
+  <ext4:panel                          height="500" width="600" addPage="entryTable" />
 </ext4:container>
 
