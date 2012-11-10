@@ -1,7 +1,9 @@
 all:
-	cp entry*.ewd ~/www/ewd/GrowthChartsMCM
-	cp *Chart.ewd ~/www/ewd/GrowthChartsMCM
-	cp *Page.ewd  ~/www/ewd/GrowthChartsMCM
+	cp entry*.ewd       ~/www/ewd/GrowthChartsMCM
+	cp *Chart.ewd       ~/www/ewd/GrowthChartsMCM
+	cp *Page.ewd        ~/www/ewd/GrowthChartsMCM
+	cp addNewPrtp.ewd   ~/www/ewd/GrowthChartsMCM
+	cp adminPage.ewd    ~/www/ewd/GrowthChartsMCM
 	cp entry*.m           ~/www/r
 	cp growthChartsMCM.m  ~/www/r
 	cp *.png              ~/www/resources
