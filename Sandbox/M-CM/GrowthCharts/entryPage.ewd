@@ -2,7 +2,7 @@
   <ext4:panel height="60"  width="600" addPage="entryTitle" />
   <ext4:panel height="35"  width="150" addPage="entryTotal" />
   <ext4:panel height="30"  width="250" addPage="entryBttns" />
-  <ext4:panel height="400" width="600" addPage="headChart"  />
+  <ext4:panel height="400" width="600" addPage="headChart" id=entryChartPanel />
   <ext4:panel height="200" width="600" addPage="entryTable" />
 </ext4:fragment>
 
