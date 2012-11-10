@@ -1,4 +1,4 @@
-getChildHeader(sessid) ; 10/18/12 4:51am
+getChildHeader(sessid) ; 11/10/12 2:58pm
  new dateOfBirth
  new firstName
  new lastName
@@ -80,6 +80,33 @@ getHeadCircData(sessid) ; 10/14/12 6:36pm
  . set chart("HeadCirc",daysOfLife)=measurement
  . set chart("Date",daysOfLife)=daysOfLife
  do mergeArrayToSession^%zewdAPI(.chart,"headcircChart",sessid)
+ kill childId
+ kill measureDate
+ kill dateOfBirth
+ kill daysOfLife
+ quit ""
+ ;
+getWeightHeightRatioData(sessid) ; 10/18/12 3:44am
+ new chart
+ new childId
+ new measureDate
+ set childId=1
+ new dateOfBirth
+ new daysOfLife
+ set dateOfBirth=^zmcmData("children",childId,"dateOfBirth")
+ set measureDate=""
+ for  set measureDate=$ORDER(^zmcmData("children",childId,"measurements","weight",measureDate))  quit:measureDate=""  do
+ . set measurement=^zmcmData("children",childId,"measurements","weight",measureDate)
+ . set daysOfLife=measureDate-dateOfBirth
+ . set chart("Weight",daysOfLife)=measurement
+ . set chart("Date",daysOfLife)=daysOfLife
+ set measureDate=""
+ for  set measureDate=$ORDER(^zmcmData("children",childId,"measurements","height",measureDate))  quit:measureDate=""  do
+ . set measurement=^zmcmData("children",childId,"measurements","height",measureDate)
+ . set daysOfLife=measureDate-dateOfBirth
+ . set chart("Height",daysOfLife)=measurement
+ . set chart("Date",daysOfLife)=daysOfLife
+ do mergeArrayToSession^%zewdAPI(.chart,"whrtioChart",sessid)
  kill childId
  kill measureDate
  kill dateOfBirth
