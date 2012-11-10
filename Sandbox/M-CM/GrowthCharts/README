@@ -1,0 +1,31 @@
+
+How to Deploy
+=============
+
+The .ewd files must be copied to the directory
+
+::
+
+        ~/www/ewd/GrowthChartsMCM
+
+
+The .m files must be copied to the directory
+
+::
+
+        ~/www/r
+
+
+The .png image files must be copies to the directory
+
+::
+
+        ~/www/resources
+
+Then the application must be compiled with
+
+::
+
+        $gtm_dist/mumps -dir
+
+        >  do compileAll^%zewdAPI("GrowthChartsMCM")
