@@ -1,0 +1,5 @@
+<ewd:fragment onBeforeRender="validateNewParticipant^newParticipant">
+  <script language="javascript">
+    document.location.replace('desktop.ewd');
+  </script>
+</ewd:fragment>

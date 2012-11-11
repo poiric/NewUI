@@ -2,6 +2,6 @@
   <ext4:formPanel id="newParicipantPanel" title="Administration - Add New Participant" width="600" height="140" bodyPadding="10">
     <ext4:textfield id="participantId" fieldLabel="ID" value="*" />
     <ext4:comboBox fieldLabel="Sex" name="sex" value="*" />
-    <ext4:submitbutton text="Add" width="100" />
+    <ext4:submitbutton text="Add" width="100" nextPage="newPrtRedirect" />
   </ext4:formPanel>
 </ext4:fragment>
