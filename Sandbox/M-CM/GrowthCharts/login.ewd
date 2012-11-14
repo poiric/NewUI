@@ -1,0 +1,12 @@
+<ext4:container rootPath="/ext-4">
+  <ext4:viewPort layout="fit">
+    <ext4:modalwindow title="Please Log In" height="200" width="400" layout="fit" autoShow="true">
+      <ext4:formPanel bodyPadding="10">
+        <ext4:textfield id="username" fieldLabel="Username:" allowBlank="false" value="" />
+        <ext4:textfield id="password" inputType="password" fieldLabel="Password:" allowBlank="false" value="" />
+        <ext4:submitbutton text="Submit" nextPage="loginRedir" />
+      </ext4:formPanel>
+    </ext4:modalwindow>
+  </ext4:viewPort>
+</ext4:container>
+
