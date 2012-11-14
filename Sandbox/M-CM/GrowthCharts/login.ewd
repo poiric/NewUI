@@ -1,4 +1,4 @@
-<ext4:container rootPath="/ext-4">
+<ext4:container rootPath="/vista/ext-4">
   <ext4:viewPort layout="fit">
     <ext4:modalwindow title="Please Log In" height="200" width="400" layout="fit" autoShow="true">
       <ext4:formPanel bodyPadding="10">

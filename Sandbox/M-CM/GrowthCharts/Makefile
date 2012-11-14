@@ -4,7 +4,7 @@ all:
 	cp *Page.ewd          ~/www/ewd/GrowthChartsMCM
 	cp addNewPrtp.ewd     ~/www/ewd/GrowthChartsMCM
 	cp adminPage.ewd      ~/www/ewd/GrowthChartsMCM
-	cp newPrtRedirect.ewd ~/www/ewd/GrowthChartsMCM
+	cp newPrtRdr.ewd ~/www/ewd/GrowthChartsMCM
 	cp login*.ewd         ~/www/ewd/GrowthChartsMCM
 	cp entry*.m           ~/www/r
 	cp growthChartsMCM.m  ~/www/r

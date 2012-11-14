@@ -1,4 +1,4 @@
-<ext4:container rootPath="/vista/ext-4" >
+<ext4:container isFirstPage="false" rootPath="/vista/ext-4" >
   <ext4:panel title="M-CM Growth Charts" layout="fit" addPage="charts" />
 </ext4:container>
 
