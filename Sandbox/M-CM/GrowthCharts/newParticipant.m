@@ -13,13 +13,13 @@ validateNewParticipant(sessid) ;
  ;
  QUIT ""
  ;
-addNewParticipant() ;
+addNewParticipant(sessid) ;
  new thisChild
  ;
  lock ^zmcmData("nextChild")
  set thisChild=^zmcmData("nextChild")
  set ^zmcmData("nextChild")=thisChild+1
- unlock ^zmcmData("nextChild")
+ lock -^zmcmData("nextChild")
  ;
  s name=$$getSessionValue^%zewdAPI("participantId",sessid)
  s sex=$$getSessionValue^%zewdAPI("sex",sessid)
