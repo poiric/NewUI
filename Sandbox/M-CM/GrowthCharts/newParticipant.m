@@ -12,3 +12,23 @@ validateNewParticipant(sessid) ;
  s value=$$getSessionValue^%zewdAPI("rank",sessid)
  ;
  QUIT ""
+ ;
+addNewParticipant() ;
+ new thisChild
+ ;
+ lock ^zmcmData("nextChild")
+ set thisChild=^zmcmData("nextChild")
+ set ^zmcmData("nextChild")=thisChild+1
+ unlock ^zmcmData("nextChild")
+ ;
+ s name=$$getSessionValue^%zewdAPI("participantId",sessid)
+ s sex=$$getSessionValue^%zewdAPI("sex",sessid)
+ ;
+ set ^zmcmData("children",thisChild,"name")=name
+ set ^zmcmData("children",thisChild,"gender")=sex
+ set ^zmcmData("children",thisChild,"measurements")=""
+ set ^zmcmData("children",thisChild,"measurements","weight")=""
+ set ^zmcmData("children",thisChild,"measurements","height")=""
+ set ^zmcmData("children",thisChild,"measurements","headCircumference")=""
+ quit thisChild
+ ;

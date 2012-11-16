@@ -1,4 +1,4 @@
-<ewd:fragment onBeforeRender="validateNewParticipant^newParticipant">
+<ewd:fragment onBeforeRender="addNewParticipant^newParticipant">
   <script language="javascript">
     document.location.replace('topPage.ewd');
   </script>
