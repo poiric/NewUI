@@ -1,5 +1,5 @@
 #!/bin/sh
-export EWD_DIR=/home/ewder/ewd-instance/
+export EWD_DIR='/home/ewder/ewd-instance'
 export gtm_dist=/usr/lib/fis-gtm/V6.0-000_x86_64
 export gtmprofilefile=$gtm_dist/gtmprofile
 source $gtmprofilefile
