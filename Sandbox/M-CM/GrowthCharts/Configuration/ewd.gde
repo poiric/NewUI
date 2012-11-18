@@ -1,3 +1,4 @@
+change -s DEFAULT -f=/home/ewder/ewd-instance/g/ewd
 a -s EWD -bl=32768 -al=1000 -f=/home/ewder/ewd-instance/g/ewd.dat
 a -r EWD -d=EWD -s -k=255 -r=32752 -j=before
 a -n %MGWSI -r=EWD
