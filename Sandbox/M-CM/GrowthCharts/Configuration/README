@@ -56,7 +56,7 @@ Note: hit Esc to go back at any point
 
 
 Application Root Path (/usr/ewdapps): /home/ewder/ewd-instance/apps
-Routine Path (/usr/local/gtm/ewd/): /home/ewder/ewd-instance/r
+Routine Path (/usr/local/gtm/ewd/): /home/ewder/ewd-instance/r/
 Javascript and CSS File Output Path (/var/www/resources/): /var/www/resources/
 Javascript and CSS File URL Path (/resources/): /resources/
 
