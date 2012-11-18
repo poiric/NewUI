@@ -40,6 +40,8 @@ exit
 
 mupip create
 
+$gtm_dist/dse change -f -key_max=1023 -rec=4096
+
 
 Configure EWD
 -------------
