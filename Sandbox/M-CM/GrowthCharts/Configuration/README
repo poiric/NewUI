@@ -41,3 +41,24 @@ exit
 mupip create
 
 
+Configure EWD
+-------------
+
+gtm
+
+GTM>kill ^zewd
+
+GTM>do compileAll^%zewdAPI("ewdMgr")
+
+Installing/Configuring Enterprise Web Developer (Build 939)
+
+Note: hit Esc to go back at any point
+
+
+Application Root Path (/usr/ewdapps): /home/ewder/ewd-instance/apps
+Routine Path (/usr/local/gtm/ewd/): /home/ewder/ewd-instance/r
+Javascript and CSS File Output Path (/var/www/resources/): /var/www/resources/
+Javascript and CSS File URL Path (/resources/): /resources/
+
+Enterprise Web Developer (Build 939) is configured and ready for use
+
