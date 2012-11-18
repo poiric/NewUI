@@ -14,6 +14,9 @@ installPackages.sh
 installGTM.sh
 createDirectories.sh
 cloneRepositories.sh
+createSymbolicLinks.sh
+copyEWDSources.sh
+
 
 Setup Environment
 -----------------
