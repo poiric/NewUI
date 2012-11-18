@@ -10,6 +10,3 @@ a -n %zewdIndex -r=EWD
 a -n %zewdLog -r=EWD
 a -n %zewdSession -r=EWD
 a -n %zewdTrace -r=EWD
-a -s EWDTEMP -bl=32768 -al=1000 -f=/home/ewder/ewd-instance/g/ewdtemp.dat
-a -r EWDTEMP -d=EWDTEMP -s -k=255 -r=32752
-a -n CacheTemp* -r=EWDTEMP
