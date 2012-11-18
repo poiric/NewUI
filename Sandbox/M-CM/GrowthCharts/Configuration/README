@@ -1,3 +1,40 @@
+README
+======
+
 This directory hosts scripts to simplify the installation and configuration of
 GT.M and EWD
+
+
+Sequence of operations
+
+Run the scripts
+---------------
+
+installPackages.sh
+installGTM.sh
+createDirectories.sh
+cloneRepositories.sh
+
+Setup Environment
+-----------------
+
+Type this line:
+
+source /home/ewder/src/NewUI/Sandbox/M-CM/GrowthCharts/Configuration/setupEnvironmentVariables.sh
+
+and also insert it at the bottom of your .bashrc file
+so it is called every time you log in.
+
+
+Create the Database 
+-------------------
+
+Execute the following commands
+
+GDE
+@ewd.gde
+exit
+
+mupip create
+
 
