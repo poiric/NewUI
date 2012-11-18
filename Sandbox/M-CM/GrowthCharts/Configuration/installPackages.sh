@@ -16,5 +16,13 @@ sudo aptitude install libapr1-dev
 sudo aptitude install libssl-dev
 sudo aptitude install apache2-threaded-dev
 sudo aptitude install xinetd
+sudo aptitude install unzip
+
+# Get the YUI library and install it.
+pushd /tmp
+wget http://yui.zenfs.com/releases/yui2/yui_2.6.0r2.zip
+sudo unzip yui_2.6.0r2.zip -d /var/www/
+sudo chmod 777 /var/www/yui/
+popd
 
 echo "You may want to reboot at this point"
