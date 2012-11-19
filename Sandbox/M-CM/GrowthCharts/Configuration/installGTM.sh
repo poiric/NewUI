@@ -9,4 +9,6 @@ wget -q -N http://sourceforge.net/projects/fis-gtm/files/GT.M-amd64-Linux/V5.5-0
 mkdir fisgtm-v55000
 cd fisgtm-v55000
 tar -xzf ../gtm_V55000_linux_x8664_pro.tar.gz
+sudo ./configure
+
 
