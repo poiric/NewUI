@@ -37,7 +37,7 @@ Execute the following commands
 GDE
 
 GDE> change -segment default -block=32768
-GDE> change -region default -key=255 =record=32752
+GDE> change -region default -key=255 -record=32752
 exit
 
 mupip create
