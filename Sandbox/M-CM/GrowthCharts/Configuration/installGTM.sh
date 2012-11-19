@@ -15,8 +15,8 @@ sudo ./configure
 #  Make larger the size of blocks that can be manged.
 #  This is required by EWD settings.
 #
-sudo echo "kernel.shmmax = 67108864" >> /etc/sysctl.conf
-sudo sysctl -w kernel.shmmax=67108864
+sudo echo "kernel.shmmax = 134217728" >> /etc/sysctl.conf
+sudo sysctl -w kernel.shmmax=134217728
 
 
 

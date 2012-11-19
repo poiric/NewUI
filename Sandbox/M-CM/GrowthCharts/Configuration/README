@@ -35,12 +35,13 @@ Create the Database
 Execute the following commands
 
 GDE
-@ewd.gde
+
+GDE> change -segment default -block=32768
+GDE> change -region default -key=255 =record=32752
 exit
 
 mupip create
 
-$gtm_dist/dse change -f -key_max=1023 -rec=4096
 
 
 Configure EWD
