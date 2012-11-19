@@ -11,7 +11,6 @@ sudo aptitude update
 sudo aptitude upgrade
 sudo aptitude install git 
 sudo aptitude install build-essential
-sudo aptitude install build-essentials
 sudo aptitude install libapr1-dev
 sudo aptitude install libssl-dev
 sudo aptitude install apache2-threaded-dev
