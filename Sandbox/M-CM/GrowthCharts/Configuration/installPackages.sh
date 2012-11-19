@@ -18,11 +18,9 @@ sudo aptitude install xinetd
 sudo aptitude install unzip
 
 # Get the YUI library and install it.
-pushd /tmp
 wget http://yui.zenfs.com/releases/yui2/yui_2.6.0r2.zip
 sudo unzip yui_2.6.0r2.zip -d /var/www/
 sudo chmod 777 /var/www/yui/
 sudo mv /var/www/yui/ /var/www/yui-2.6.0
-popd
 
 echo "You may want to reboot at this point"
