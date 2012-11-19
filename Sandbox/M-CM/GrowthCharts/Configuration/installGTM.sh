@@ -11,6 +11,13 @@ cd fisgtm-v55000
 tar -xzf ../gtm_V55000_linux_x8664_pro.tar.gz
 sudo ./configure
 
+#
+#  Make larger the size of blocks that can be manged.
+#  This is required by EWD settings.
+#
+sudo echo "kernel.shmmax = 67108864" >> /etc/sysctl.conf
+sudo sysctl -w kernel.shmmax=67108864
+
 
 
 ######################################################################
